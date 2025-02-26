@@ -3,9 +3,9 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div>
-            <nav class="navbar">
-                <div class="logo">Product Manager</div>
-                <ul class="nav-links">
+            <nav className="navbar">
+                <div className="logo">Product Manager</div>
+                <ul className="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
