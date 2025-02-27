@@ -13,23 +13,23 @@ const Home = () => {
   useEffect(() => {
     fetchProducts()
   }, [])
-  
+
   return (
     <>
       <Navbar />
-      {
-        products.map((product)=>{
-          return (
-            <div key={product.id} className="container">
-              <div className="product-card">
+      <div className="container">
+        {
+          products.map((product) => {
+            return (
+              <div key={product.id} className="product-card">
                 <img src={product.productImage} alt="Product Image" />
                 <h2>{product.productName}</h2>
                 <p>{product.productDescription}</p>
               </div>
-            </div>
-          )
-        })
-      }
+            )
+          })
+        }
+      </div>
     </>
   )
 }
